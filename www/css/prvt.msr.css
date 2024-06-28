@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0fdf4;
+    color: #064e3b;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #047857;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d1fae5;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #065f46;
+    font-size : 40px ; 
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card li {
+    text-align: left;
+    padding: 5px 0;
+}
+
+.card li::before {
+    content: "✔";
+    color: #10b981;
+    margin-right: 10px;
+}
