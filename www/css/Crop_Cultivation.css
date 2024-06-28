@@ -31,6 +31,17 @@ body {
     font-size: 50px;
     margin-top: 0;
     color: #2E865F;
+    margin : 0 0 0 ; 
+    margin-top: 30px;
+    font-weight: 700;
+    text-align: left;
+    width: 75%;
+    height : 20% ; 
+  }
+
+  h3 { 
+    font-size: 30px;
+    font-style: italic;
   }
   
   ul {
@@ -47,7 +58,41 @@ body {
   li:last-child {
     border-bottom: none;
   }
+
+#kharif-crops{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 50px;
+    background: #ececec;
+    width:80vw;
+    height:90vh;
+    padding-bottom: 100px ; 
+}
+
+.image{
+    scale: 80%;
+    width: 100%;
+    border-radius: 3.3rem;
+    -webkit-box-shadow: 8px 9px 11.5px 3.5px #dddddd;
+    -moz-box-shadow: 8px 9px 11.5px 3.5px #dddddd;
+    box-shadow: 8px 9px 11.5px 3.5px #dddddd;
+}
+
   
+.left{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    display:flex;
+    align-items: center;
+    padding-top:60px;
+    flex-direction: column;
+}
+
+
   footer {
     background-color: #34C759; 
     padding: 10px;
