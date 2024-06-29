@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alerts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/alerts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header class="nav">
+        <nav>
+            <p class="env">Enviormental Eye</p>
+            <p class="alt"><a href="./about.html" >About Us</a></p>
+        </nav>
+    </header>
+    <div class="alerts">
+        <div class="alertWindow">
+            <p class="head">Alerts<span style="font-size:2.5rem;font-weight: bolder;" class="material-symbols-outlined">notifications_active</span></p>
+            <div class="vr"></div>
+            <div class="notifications">
+                <div class="card">
+                    <div class="top"><span class="topic">Severe Draught</span ><span class="priority">High severity</span></div>
+                    <div class="middle">Location : Bhubaneswar, India</div>
+                    <div class="bottom"><button class="precaution"><a href="">Precautions</a></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seasonOngoing">
+        <div class="weather">
+            <p class="head" id="season">
+                {Current_season}
+            </p>
+            <div class="vr"></div>
+
+            <div class="data" id ='container'>
+<!--                <ul class="text" >-->
+<!--                    <li><b>Cold and Frost: </b> Use mulch, cover crops, and cold-tolerant varieties like wheat, barley, and mustard to protect against low temperatures and frost.</li>-->
+<!--                    <li><b>Suitable Crops:</b> Plant chickpeas, spinach, carrots, peas, and cauliflower for winter</li>-->
+<!--                    <li><b>Irrigation:</b>  Adjust schedules for lower evaporation rates and use furrow irrigation to conserve water.</li>-->
+<!--                    <li><b>Pest Management:</b>  Monitor pests and use IPM techniques suited for winter.</li>-->
+<!--                    <li><b>Preparation:</b> Test soil, add organic matter, and plan crop rotations for soil fertility and health in winter.</li>-->
+<!--                </ul>-->
+<!--                <a href="" class="link">Learn More</a>-->
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/weather.js"></script>
+</body>
+</html>
