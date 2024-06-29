@@ -1,4 +1,4 @@
-# Enviormental-Eye🌍 
+# Enviornmental-Eye🌍 
 
 
 The Environmental Eye is a comprehensive flood detection system that also simultaneously forecasts floods, cyclones, and droughts, all in one platform of early warning. The aim is to give authorities and communities the ability to react quickly and effectively to these environmental disasters by saving lives and securing livelihoods. This particularly affects the agricultural sector whereby farmers face enormous economic losses, food insecurity, and psychological stress.
