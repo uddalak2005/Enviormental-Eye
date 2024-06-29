@@ -62,10 +62,3 @@ The data was preprocessed to handle missing values, normalize ranges, and ensure
 3. **📩 Receive Alerts**: Get real-time notifications for floods, cyclones, and droughts.
 4. **📈 Access Data**: Utilize climate models and weather forecasts for informed decision-making.
 
-## Licence 
-
-to be filled 
-
-## Contact
-
-to be filled 
