@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import StandardScaler
 
-df = pd.read_csv('kerala.csv')
+df = pd.read_csv('uttrakhand.csv')
 
 
 print(df.columns)
