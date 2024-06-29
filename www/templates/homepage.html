@@ -45,6 +45,9 @@
           
           .notifications {
             overflow-y: scroll;
+            text-align: center;
+            font-size: 30px;
+
           }
           
           .topic {
@@ -302,15 +305,18 @@
         <div class="alertWindow">
             <p class="head">Alerts<span style="font-size:2.5rem;font-weight: bolder;" class="material-symbols-outlined">notifications_active</span></p>
             <div class="vr"></div>
-            <div class="notifications">                    
+            <div class="notifications">     
+              PREDICTED LAND SURFACE TEMPERATURE: {{lst}}<br>   
+              FLOOD PREDICTION : {{flood}}    
                 </div>
+            
             </div>
         </div>
     </div>
     <div class="seasonOngoing">
         <div class="weather">
             <p class="head" id="season">
-                {Current_season}
+                Current Season : {{current_season}}
             </p>
             <div class="vr"></div>
 
