@@ -5,8 +5,309 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crop Cultivation</title>
-  <link rel="stylesheet" href="css/Crop_Cultivation.css"> 
+  <!-- <link rel="stylesheet" href="css/Crop_Cultivation.css">  -->
   <link rel="stylesheet" href="css/homepage.css">
+
+  <style>/* styles.css */
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f0f0f0; 
+      }
+      
+    
+      
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      section {
+        background-color: #C6F7D0; 
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .nav{
+        width:100%;
+        /*overflow:hidden;*/
+        padding:20px;
+        display: flex;
+        height:12vh;
+        align-items: center;
+        background:#06D001;
+        color:#ffffff;
+    }
+    
+    nav{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width:87%;
+        margin: auto;
+    }
+    .alt{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size:2rem;
+        color: white;
+    }
+    
+      h2 {
+        font-size: 50px;
+        margin-top: 0;
+        color: #2E865F;
+        margin : 0 0 0 ; 
+        margin-top: 30px;
+        font-weight: 700;
+        text-align: left;
+        width: 75%;
+        height : 20% ; 
+      }
+    
+      h3 { 
+        font-size: 30px;
+        font-style: italic;
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      li {
+        padding: 10px;
+        border-bottom: 1px solid #8BC34A;
+      }
+      
+      li:last-child {
+        border-bottom: none;
+      }
+    
+    #kharif-crops{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 50px;
+        background: #ececec;
+        width:90vw;
+        height:90vh;
+        padding-bottom: 100px ; 
+    }
+    
+    #rabi-crops{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-radius: 50px;
+      background: #ececec;
+      width:90vw;
+      height:90vh;
+      padding-bottom: 100px ; 
+    }
+    
+    @media (max-width: 600px) {
+      nav h1 {
+          font-size: 18px; 
+      }
+      nav p.alt a {
+          font-size: 14px; 
+          padding: 3px 7px; 
+      }
+    }
+    @media (min-width: 601px) {
+      nav {
+          flex-direction: row;
+          justify-content: space-between;
+      }
+      nav h1 {
+          font-size: 32px; 
+      }
+      nav p.alt {
+          margin: 0;
+      }
+      nav p.alt a {
+          font-size: 50px; 
+          padding: 5px 10px; 
+      }
+    }
+    
+    
+    .image{
+        scale: 80%;
+        width: 100%;
+        border-radius: 3.3rem;
+        -webkit-box-shadow: 8px 9px 11.5px 3.5px #dddddd;
+        -moz-box-shadow: 8px 9px 11.5px 3.5px #dddddd;
+        box-shadow: 8px 9px 11.5px 3.5px #dddddd;
+    }
+    
+      
+    .left{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .right{
+        display:flex;
+        align-items: center;
+        padding-top:60px;
+        flex-direction: column;
+    }
+    
+    
+      footer {
+        background-color: #34C759; 
+        padding: 10px;
+        text-align: center;
+        clear: both;
+        color: #fff;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    
+    header {
+        background-color: #06D001; 
+        color: #ffffff; 
+        padding: 10px; 
+        height : 150px ; 
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 80px;
+        font-weight: bold;
+        font-style: italic;
+        justify-content : centre ; 
+        padding : 15px ; 
+        color: #ffffff ; 
+        margin: 0;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    
+    }
+    
+    section {
+        background-color: #ffffff; 
+        padding: 20px;
+        border: 1px solid #cccccc; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+    
+    .nav{
+        width:100%;
+        /*overflow:hidden;*/
+        padding:20px;
+        display: flex;
+        height:12vh;
+        align-items: center;
+        background:#06D001;
+        color:#ffffff;
+    }
+    
+    nav{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width:87%;
+        margin: auto;
+    }
+    .alt{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size:2rem;
+        color: white;
+    }
+    
+    header {
+        background-color: #06D001;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    nav p.alt {
+        margin: 5px 0 0 0;
+    }
+    nav p.alt a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid white;
+        border-radius: 3px;
+        transition: background-color 0.3s;
+    }
+    nav p.alt a:hover {
+        background-color: white;
+        color: #4CAF50;
+    }
+    @media (max-width: 600px) {
+        nav h1 {
+            font-size: 18px; /* Smaller font size for smaller screens */
+        }
+        nav p.alt a {
+            font-size: 14px; /* Adjust font size for smaller screens */
+            padding: 3px 7px; /* Adjust padding for smaller screens */
+        }
+    }
+    @media (min-width: 601px) {
+        nav {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        nav h1 {
+            font-size: 32px; /* Larger font size for larger screens */
+        }
+        nav p.alt {
+            margin: 0;
+        }
+        nav p.alt a {
+            font-size: 16px; /* Adjust font size for larger screens */
+            padding: 5px 10px; /* Adjust padding for larger screens */
+        }
+    }
+    
+    h2 {
+        margin-top: 0;
+    }
+    
+    footer {
+        background-color: #34C759; 
+        color: #ffffff; 
+        padding: 10px;
+        text-align: center;
+        clear: both;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+    
+    </style>
 </head>
 <body>
   <header>
@@ -19,7 +320,7 @@
 
       <div><h2>Kharif Crops</h2>
         <div class="left">
-          <img src="img/kharif.jpg" alt="" class="kharif-crops-img image">
+          <img src="/static/kharif.jpg" alt="" class="kharif-crops-img image">
         </div>
       </div>
       </div>
@@ -50,7 +351,7 @@
     <section id="rabi-crops">
       <div><h2>Rabi Crops</h2>
         <div class="left">
-          <img src="img/Rabi.jpg" alt="" class="rabi-crops-img image">
+          <img src="/static/Rabi.jpg" alt="" class="rabi-crops-img image">
         </div>
       </div>
       </div>

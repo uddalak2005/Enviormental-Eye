@@ -14,7 +14,140 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/index.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+
+    font-family: 'Poppins', sans-serif;
+
+    margin:0;
+    padding:0;
+    overflow-y: hidden;
+}
+
+
+.wrapper{
+    padding:80px;
+    background:#059212;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 50px;
+    background: #ececec;
+    width:80vw;
+    height:90vh;
+}
+
+.image{
+    scale: 80%;
+    width: 100%;
+    border-radius: 3.3rem;
+    -webkit-box-shadow: 8px 9px 11.5px 3.5px #dddddd;
+    -moz-box-shadow: 8px 9px 11.5px 3.5px #dddddd;
+    box-shadow: 8px 9px 11.5px 3.5px #dddddd;
+}
+
+.pic{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    display:flex;
+    align-items: center;
+    padding-top:60px;
+    flex-direction: column;
+
+}
+
+.head{
+    margin-top: 30px;
+    font-weight: 700;
+    text-align: left;
+    width: 80%;
+}
+
+form{
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    gap:20px;
+}
+
+.text{
+    /*border-radius: 10px;*/
+    height:50px;
+    border:none;
+    border-bottom:3px solid #bfbfbf;
+    padding:10px;
+    background-color:#ececec;
+    padding-left: 20px;
+
+}
+
+.sign_up{
+    margin-top:30px;
+    background-color: #9BEC00;
+    border:none;
+    height:50px;
+    border-radius: 10px;
+}
+
+.mobile{
+    display:none;
+}
+
+.phonenum{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap:20px;
+    width:100%;
+}
+
+@media(max-width:768px) {
+    .left{
+        display: none;
+    }
+    .right{
+        padding-top: 0;
+
+    }
+    .main{
+        grid-template-columns: 1fr;
+        height:680px;
+        padding-bottom: 20px;
+    }
+    .wrapper{
+        padding:20px;
+    }
+    .text{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mobile{
+        display: block;
+    }
+}
+
+
+    </style>
     <script type="module" src="./js/signup.js"></script>
   </head>
   <body>
@@ -22,14 +155,14 @@
       <div class="main">
         <div class="left">
           <img
-            src="./img/Default_farming_0.jpg"
+            src="/static/Default_farming_0.jpg"
             alt=""
             class="img-fluid image"
           />
         </div>
         <div class="right">
           <img
-            src="./img/Default_farming_2.jpg"
+            src="/static/Default_farming_2.jpg"
             alt="ffff"
             class="mobile"
             height="23%"
@@ -61,7 +194,7 @@
           </form>
           <p style="margin-top: 20px; font-size: 0.8rem">
             Already have an account?
-            <span><a href="./Log_In.html">Log In</a></span>
+            <span><a href="/log_in">Log In</a></span>
           </p>
         </div>
       </div>
